@@ -8,18 +8,18 @@ This VHDL code implements a debounce circuit, which is used to suppress unwanted
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 # VHDL Debounce Module – Buton Zıplama Bastırıcı
 
-## 🧠 Açıklama (Türkçe)
+##  Açıklama (Türkçe)
 
 Bu proje, fiziksel butonlarda meydana gelen mekanik zıplamaları (bounce) filtreleyen bir debounce modülünü VHDL diliyle gerçekleştirmektedir. FSM (sonlu durum makinesi) tabanlı bu yapı, giriş sinyalinin kararlı hale gelmesini zamanlayıcı ile birlikte kontrol eder ve yalnızca geçerli (doğrulanmış) değişimleri çıkışa yansıtır.
 
-### 🚀 Özellikler
+###  Özellikler
 
 - FSM tabanlı güvenilir debounce algoritması  
 - Zamanlayıcı kontrollü geçişler  
 - Parametrik yapı (saat frekansı, debounce süresi, başlangıç değeri)  
 - FPGA veya CPLD platformlarında kullanılmaya uygun yapı  
 
-### ⚙️ Parametreler (Generic)
+###  Parametreler (Generic)
 
 | Parametre     | Açıklama                        | Varsayılan |
 |---------------|----------------------------------|------------|
@@ -27,7 +27,7 @@ Bu proje, fiziksel butonlarda meydana gelen mekanik zıplamaları (bounce) filtr
 | `c_debtime`   | Debounce süresi (1/sn)           | 1000       |
 | `c_initval`   | Başlangıç çıkış değeri (`'0'` veya `'1'`) | `'0'` |
 
-### 📥 Giriş/Çıkış Portları
+###  Giriş/Çıkış Portları
 
 | Port       | Tip         | Açıklama                   |
 |------------|-------------|----------------------------|
@@ -37,18 +37,18 @@ Bu proje, fiziksel butonlarda meydana gelen mekanik zıplamaları (bounce) filtr
 
 ---
 
-## 🧠 Description (English)
+##  Description (English)
 
 This project implements a debounce module written in VHDL to eliminate mechanical bouncing that occurs with physical push buttons. The design is based on a finite state machine (FSM) and uses a timer to verify stable signal transitions before updating the output.
 
-### 🚀 Features
+###  Features
 
 - FSM-based reliable debounce logic  
 - Timer-controlled state transitions  
 - Parameterized design (clock frequency, debounce time, initial value)  
 - Suitable for FPGA or CPLD platforms  
 
-### ⚙️ Parameters (Generic)
+###  Parameters (Generic)
 
 | Parameter     | Description                       | Default     |
 |---------------|-----------------------------------|-------------|
@@ -56,7 +56,7 @@ This project implements a debounce module written in VHDL to eliminate mechanica
 | `c_debtime`   | Debounce time (1/seconds)         | 1000        |
 | `c_initval`   | Initial output value (`'0'` or `'1'`) | `'0'`     |
 
-### 📥 Input/Output Ports
+###  Input/Output Ports
 
 | Port       | Type        | Description               |
 |------------|-------------|---------------------------|
@@ -66,7 +66,7 @@ This project implements a debounce module written in VHDL to eliminate mechanica
 
 ---
 
-## 🔧 Nasıl Kullanılır / How to Use
+##  Nasıl Kullanılır / How to Use
 
 1. `debounce.vhd` dosyasını projenize ekleyin.
 2. Parametreleri ihtiyacınıza göre düzenleyin.
